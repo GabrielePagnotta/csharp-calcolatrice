@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalcoliHelper
 {
-    public class Helper
+    public static class Helper
     {
         
         public static int Somma(int num1, int num2) => num1 + num2;
@@ -16,7 +16,6 @@ namespace CalcoliHelper
         
         public static double Differenza(double num1, double num2) => num1 - num2;
         
-
         public static int Moltiplicazione(int num1, int num2) => num1 * num2;
 
         public static double Moltiplicazione(double num1, double num2) => num1 * num2;
@@ -68,6 +67,24 @@ namespace CalcoliHelper
             {
                 return num2;
             }
+        }
+        public static int Potenza(int num1, int num2)
+        {
+
+
+            int result =Convert.ToInt32( Math.Pow(num1, num2));
+            bool d = (num1 == 0 && num2 == 0) ? true : false;
+
+            if (d)
+            {
+                return 1;
+            }
+            else
+            {
+                return result;
+            }
+            
+
         }
     }
 }
