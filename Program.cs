@@ -36,4 +36,4 @@ Console.WriteLine(Helper.Massimo(10, 22));
 Console.WriteLine(Helper.Massimo(50.2, 32.4));
 
 //bonus
-Console.WriteLine(Helper.Potenza(2,4));
+Console.WriteLine(Helper.Potenza(2,2));

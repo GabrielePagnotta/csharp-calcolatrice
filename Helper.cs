@@ -70,9 +70,13 @@ namespace CalcoliHelper
         }
         public static int Potenza(int num1, int num2)
         {
-
-
-            int result =Convert.ToInt32( Math.Pow(num1, num2));
+            int sold = 1;
+            for (int i = 0; i < num2; i++)
+            {
+                 sold *= num1;
+            }
+            
+            
             bool d = (num1 == 0 && num2 == 0) ? true : false;
 
             if (d)
@@ -81,7 +85,7 @@ namespace CalcoliHelper
             }
             else
             {
-                return result;
+                return sold;
             }
             
 
